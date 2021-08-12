@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="frontend/common/head.html">
+</head>
+<body>
+    <header th:replace="frontend/common/header.html"></header>
+    <!-- ======= Slide Bar ======= -->
+    <!-- ======= Slide Bar ======= -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" th:style="'background-image: url(assets/img/slider/2.jpg)'">
+                    <div class="carousel-container">
+                        <div class="container">
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" th:style="'background-image: url(assets/img/slider/1.jpg)'">
+                        <div class="carousel-container">
+                            <div class="container">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" th:style="'background-image: url(assets/img/slider/3.jpg)'">
+                        <div class="carousel-container">
+                            <div class="container">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Product & Action-->
+    <div class="container">
+        <!--Action-->
+        <div class="row col-md-12 action">
+            <div class="col-md-3 shipping">
+                <i class="fas fa-car" style="font-size: 60px;"></i>
+                <h4>Miễn Phí Ship</h4>
+                <h5>Cho đơn trên 500k</h5>
+            </div>
+            <div class="col-md-3 money">
+                <i class="far fa-money-bill-alt" style="font-size: 60px;"></i>
+                <h4>Hoàn Tiền 100%</h4>
+                <h5>Nếu Sản Phẩm Lỗi</h5>
+            </div>
+            <div class="col-md-3 support">
+                <i class="fas fa-life-ring" style="font-size: 60px;"></i>
+                <h4>Hỗ Trợ 24/7</h4>
+                <h5>Shop Online 24/7</h5>
+            </div>
+            <div class="col-md-3 payment">
+                <i class="fas fa-headphones" style="font-size: 60px;"></i>
+                <h4>Miễn Phí Cuộc Gọi</h4>
+                <h5>Tư vấn Trực Tiếp</h5>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Product-->
+        <div class="row col-md-12 product">
+            <div class="row col-md-3 title-product">
+                <h4>SẢN PHẨM MỚI</h4>
+            </div>
+            <div class="row col-md-9 menu-product">
+                <ul class="menu">
+                    <li class="">
+                        <a href="#" title="Tất cả">
+                            Tất cả
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Giao lĩnh">
+                            Giao lĩnh
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Viên lĩnh">
+                            Viên lĩnh
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Lập lĩnh">
+                            Lập lĩnh
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Đối khâm">
+                            Đối khâm
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Đầm/Yếm">
+                            Đầm/Yếm
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Chân váy">
+                            Chân váy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row col-md-12 product-2">
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/giaolinh.jpg" alt="">
+                <h4>Giao lĩnh Liên Vân</h4>
+                <h5>400,000đ</h5>
+            </div>
+        </div>
+    </div>
+<!--    <div class="content"  layout:fragment="content">-->
+    <div class="banner">
+        <img src="./assets/img/product/banner.webp" alt="" style="margin-top: 40px;width:100%;margin-bottom: 40px;">
+    </div>
+
+
+    <div class="container">
+        <div class="row col-md-12">
+            <div class="col-md-4">
+                <h3 class="title-space">Xu Hướng</h3>
+                <div class="row col-md-12">
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/hottrend.jpg" alt="" style="width:60px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Nhật bình Thủy Ba</h5>
+                        <h6>415,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/hottrend.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Nhật bình Thủy Ba</h5>
+                        <h6>415,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/hottrend.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Nhật bình Thủy Ba</h5>
+                        <h6>415,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/hottrend.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Nhật bình Thủy Ba</h5>
+                        <h6>415,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/hottrend.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Nhật bình Thủy Ba</h5>
+                        <h6>415,000đ</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="title-space">Giảm Giá</h3>
+                <div class="row col-md-12">
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/giamgia.jpg" alt="" style="width:60px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Yếm Tiên Hạc</h5>
+                        <h6>399,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/giamgia.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Yếm Tiên Hạc</h5>
+                        <h6>399,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/giamgia.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Yếm Tiên Hạc</h5>
+                        <h6>399,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/giamgia.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Yếm Tiên Hạc</h5>
+                        <h6>399,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/giamgia.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Yếm Tiên Hạc</h5>
+                        <h6>399,000đ</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="title-space">Sắp Ra Mắt</h3>
+                <div class="row col-md-12">
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/sapramat.jpg" alt="" style="width:60px; margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Giao lĩnh Hoàng Long</h5>
+                        <h6>499,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/sapramat.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Giao lĩnh Hoàng Long</h5>
+                        <h6>499,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/sapramat.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Giao lĩnh Hoàng Long</h5>
+                        <h6>499,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/sapramat.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Giao lĩnh Hoàng Long</h5>
+                        <h6>499,000đ</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/product/sapramat.jpg" alt="" style="width:60px;margin-top: 20px;">
+                    </div>
+                    <div class="col-md-8 mgt">
+                        <h5>Giao lĩnh Hoàng Long</h5>
+                        <h6>499,000đ</h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row col-md-12 ha">
+            <div class="col-md-4">
+                <img src="./assets/img/product/ha1.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/img/product/ha3.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/img/product/ha2.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row col-md-12"><h3 style="text-align: center; margin:40px 0px;">Bài Viết Mới Nhất</h3></div>
+
+    </div>
+
+    <div class="container">
+        <div class="row col-md-12" style="text-align: center;">
+            <div class="col-md-3">
+                <img src="./assets/img/product/bv1.webp" alt="" style="width:290px">
+                <p>THỨ TƯ 08,12,2020 </p>
+                <strong>Thông báo về thời gian nghỉ Tết nguyên đán 2021</strong>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/bv2.jpg" alt="" style="width:290px;height: 219px;">
+                <p>THỨ TƯ 06,10,2020 </p>
+                <strong>Ra mắt áo Đối Khâm</strong>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/bv3.jpg" alt="" style="width:290px;height: 219px;">
+                <p>THỨ Hai 04,08,2020 </p>
+                <strong>Ra mắt chân váy</strong>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/img/product/bv4.webp" alt="" style="width:290px">
+                <p>THỨ BA 22,10,2019 </p>
+                <strong>Khai trương cửa hàng tại 439B Võ Văn Tần - Quận 3</strong>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="frontend/common/footer.html"></footer>
+</body>
+</html>

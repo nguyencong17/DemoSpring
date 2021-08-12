@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/backend.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Người Dùng</title>
+</head>
+<body>
+<div class="container-fluid" layout:fragment="content">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Người Dùng</h3>
+            <button type="button" class="btn btn-block btn-primary" th:style="'weight:150px;margin-top:15px;float:right;'"> <a href="/admin/user/add" th:style="'color: white;'">Thêm NGười Dùng</a> </button>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th style="width: 10px">ID</th>
+                    <th>Username</th>
+                    <th>Avatar</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Level</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr th:each="user: ${list}">
+                    <td th:text="${user.getId()}"></td>
+                    <td th:text="${user.getUsername()}"></td>
+                    <td>
+                        <img width="100" th:src="@{'/uploads/'+${user.getAvatar()}}" alt="">
+                    </td>
+                    <td th:text="${user.getEmail()}"></td>
+                    <td th:text="${user.getPhone()}"></td>
+                    <td>
+                        <span class="badge badge-primary" th:if="${user.getLevel()==1}">Admin</span>
+                        <span class="badge badge-warning" th:if="${user.getLevel()==2}">User</span>
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-warning btn-flat" th:href="@{/admin/user/edit(id=${user.getId()})}">
+                            Edit
+                        </a>
+                        <a onclick="return confirm(`Are you sure want to delete this user?`)"
+                           class="btn btn-outline-danger btn-flat" th:href="@{/admin/user/delete(id=${user.getId()})}">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer clearfix">
+            <ul class="pagination pagination-sm m-0 float-right">
+                <li class="page-item" th:each="pageNumber: ${#numbers.sequence(1,totalPage)}"
+                    th:attr="class=${currentPage==pageNumber ? 'active page-item' : 'page-item'}">
+                    <a class="page-link" th:href="@{/admin/user/list(page=${pageNumber},pageSize=${pageSize})}"
+                       th:text="${pageNumber}"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
